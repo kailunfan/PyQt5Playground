@@ -15,7 +15,7 @@ class QTreeWidgetDemo(QTreeWidget):
         self.headerItem().setText(1, "name")
 
     def fill_data(self):
-        for i in range(20):
+        for i in range(10):
             QTreeWidgetItem(self, [str(i), f"NUM_{i}"])
 
     def connect(self):

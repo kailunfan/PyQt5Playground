@@ -9,7 +9,7 @@ class QtWebEngineViewDemo(QtWebEngineWidgets.QWebEngineView):
         self.connect()
 
     def setupUi(self):
-        self.load(QUrl('https://douban.com'))
+        self.load(QUrl('https://www.baidu.com'))
 
     def connect(self):
         self.loadFinished.connect(self.load_cookies)
