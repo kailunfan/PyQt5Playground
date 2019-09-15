@@ -1,5 +1,4 @@
-
-from PyQt5.QtCore import Qt
+from PyQt5 import QtCore
 from PyQt5 import QtWidgets
 
 
@@ -15,7 +14,7 @@ class MenuTree(QtWidgets.QDockWidget):
         self.setWidget(self.tree)
 
     def sizeHint(self):
-        return QSize(200, 900)
+        return QtCore.QSize(200, 900)
 
     def clear(self):
         self.tree.clear()

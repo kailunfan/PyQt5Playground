@@ -103,6 +103,8 @@ class Main(QtWidgets.QMainWindow):
 
     def save_code(self):
         def func(code):
+            if not self.active_file_name:
+                return
             with open(self.active_file_name, "w", encoding='utf-8') as f:
                 f.write(code)
             self.reload()
